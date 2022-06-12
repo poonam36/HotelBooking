@@ -14,7 +14,27 @@
 
     <div id="content">
     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-   <div><a href="payment.html">Book Now</a></div>
+   <div>
+      <form action="payment.html" target="_blank">
+        <label for="adults">Adults:</label>
+        <input type="number"id="adults" name="adults" min="1" required="Value must be greater than or equal to 1" autocomplete="off">
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="Please fill out this field">
+        <br>
+        <label for="date from">From Date:</label>
+        <input type="date" id="date from" name="date from" autocomplete="off">
+        <br>
+        <label for="date to">To Date:</label>
+        <input type="date" id="date to" name="date to" autocomplete="off">
+        <br>
+        <label for="total">Total:</label>
+        <input type="price" id="total" name="total" disabled>
+        <br>
+        <input type="submit" value="Book Now">
+
+      </form>
+
     <div><h3>Radisson Blu Hotel</h3></div>
     <p>RATING</p>
     <p>5 star</p>
