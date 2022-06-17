@@ -1,38 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-    <style>
-        html, body, main {
-      height: 100%;
-      width: 100%;
-    }
-    </style>
+<html>
+   
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-</head>
+    <link href = "styles/index.css" rel="stylesheet">
+  </head>
 <body><div id="main" >
-    <header>
+    <header style="background-color:#bc8f8f;">
         <a href="login.html" target="_blank">Login</a>
-        <img src="/assests/images/logo.png"  style="height:60px; width: 60px;" alt="logo"><br>
-        <form>
-        <input type="text" placeholder="City" autocomplete="off">
-        </form>
+        <img src="/assests/images/logo.png"  style="height:60px; width: 60px;" alt="logo">
+       
     </header>
+    
 
-   <div id="content" >
-   <a href="list.html">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"; style="height:150px; width: 150px;">
-   </a>
-    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" style="height:150px; width: 150px;">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"style="height:150px; width: 150px;">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" style="height:150px; width: 150px;">
+   <div id="content">
+    <form>  
+      <input type="text"  placeholder="City" autocomplete="off">
+      </form>
+   </div>
 
+   <div class="cityCards">
+    <div class="innerName">
+       <a href="list.html">
+    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt ="Delhi" style="height:300; width: 300;">
+   </a></div>
+
+   <div class="innerName">
+    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa" style="height:300; width: 300;">
+   </div>
+
+   <div class="innerName">
+    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="Hyderabad" style="height:300; width: 300;">
+   </div>
+
+   <div class="innerName">
+    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"alt="Kolkata" style="height:300; width: 300;">
+   </div>
+   </div>
+   </div>
     <div><a href="index.html">View more>></a></div>
-    </div>
+    
+    
 
-    <footer>
+
+
+
+    <footer style="background-color:#bc8f8f;">
     <div><a href="contact.html" target="_blank">Contact Us</a></div>
     <a href="https://www.facebook.com">
     <img src="\assests\images\facebook.png"target="_blank" style="height:20px; width: 22px;">

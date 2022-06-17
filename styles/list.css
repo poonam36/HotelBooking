@@ -1,0 +1,16 @@
+html, body, main {
+    height: 100%;
+    width: 100%;
+    margin: 0;  
+      }  
+      body{
+          background-color: #e0e0e0;
+      }
+      #list{
+          margin: 2%;
+      }
+      .listCityImage{
+          width:40%;
+          background-color: rgb(132,136,139);
+      }
+

@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        html, body, main {
-      height: 100%;
-      width: 100%;
-    }
-    </style>
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <link href = "styles/detail.css" rel="stylesheet">
 </head>
+
 <body><div id="main" >
-    <header>
+    <header style="background-color:#bc8f8f;">
         <a href="login.html" target="_blank">Login</a>
         <a href="index.html">
     <img src="/assests/images/logo.png"  style="height:60px; width: 60px;" alt="logo"><br>
         </a>
     </header>
 
-    <div id="content" >
+    <div id="radissonImage">
     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height:500px; width: 500px;">
-   <div>
+    </div>
+
+      <div class="bookingFormDetails">
       <form action="payment.html" target="_blank">
         <label for="adults">Adults:</label>
         <input type="number"id="adults" name="adults" min="1" required="Value must be greater than or equal to 1" autocomplete="off">
@@ -31,10 +30,10 @@
         <input type="text" id="name" name="name" required="Please fill out this field">
         <br>
         <label for="date from">From Date:</label>
-        <input type="date" id="date from" name="date from" autocomplete="off">
+        <input type="date" id="date from" name="date from" autocomplete="off" required="Please fill out this field">
         <br>
         <label for="date to">To Date:</label>
-        <input type="date" id="date to" name="date to" autocomplete="off">
+        <input type="date" id="date to" name="date to" autocomplete="off" required="Please fill out this field">
         <br>
         <label for="total">Total:</label>
         <input type="price" id="total" name="total" disabled>
@@ -42,8 +41,10 @@
         <input type="submit" value="Book Now">
 
       </form>
-
-    <div><h3>Radisson Blu Hotel</h3></div>
+    </div>
+      
+    <div class="hotelDescription">
+    <h3>Radisson Blu Hotel</h3>
     <p>RATING</p>
     <p>5 star</p>
     <p>AMENITIES</p>
@@ -55,13 +56,13 @@
         <li>Pool</li>
     </ul>
     <h5>DESCRIPTION</h5>
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellendus molestiae quas sunt minus et consequatur veniam. Perferendis quia ipsum dicta distinctio dolorum sequi necessitatibus inventore fuga laudantium molestias a, architecto corrupti accusamus. Quisquam est tempore nostrum explicabo nobis nisi.
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellendus molestiae quas sunt minus et consequatur veniam. Perferendis quia ipsum dicta distinctio dolorum sequi necessitatibus inventore fuga laudantium molestias a, architecto corrupti accusamus. Quisquam est tempore nostrum explicabo nobis nisi.</div>
     </div>
     </div>
 
 
 
-    <footer>
+    <footer style="background-color:#bc8f8f;">
     <br>
     <div><a href="contact.html" target="_blank">Contact Us</a></div>
     <a href="https://www.facebook.com">
