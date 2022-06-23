@@ -1,16 +1,54 @@
-html, body, main {
-    height: 100%;
-    width: 100%;
-    margin: 0;  
-      }  
-      body{
-          background-color: #e0e0e0;
-      }
-      #list{
-          margin: 2%;
-      }
-      .listCityImage{
-          width:40%;
-          background-color: rgb(132,136,139);
-      }
+#list {
+  margin: 2%;
+}
+
+#map {
+  display: none;
+}
+
+
+
+#listlink {
+ 
+  display: inline;
+  font-weight: bolder;
+  padding:25px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+
+  display: flex;
+ margin-left: 42%;
+  text-decoration: none;
+
+}
+
+#maplink {
+  
+  display: inline;
+  font-weight: bolder;
+
+}
+
+.listCityImage {
+  margin: 20px;
+  width: 40%;
+  background-color: rgb(132, 136, 139);
+
+}
+.radission{
+float: left;
+}
+.lalit{
+  margin-right: 20px;
+float: right;
+}
+.taj{
+  margin-top: 20px;
+  clear: both;
+}
 

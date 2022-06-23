@@ -1,21 +1,15 @@
-html, body, main {
-    height: 100%;
-    width: 100%;
-    margin:0;
-  }
-  body{
-      background-color:  #e0e0e0;
-  }
-  #radissonImage{
-      margin-top:2%;
-      margin-left: 4%;
-      margin-right: 4%;
-  }
-  .bookingFormDetails{
-      margin-right:4%;
-      margin-left: 4%;
-      margin-bottom: 1%;
-  }
-  .hotelDescription{
-      margin:1% 4% 2% 4%;
-  }
+#radissonImage {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.bookingFormDetails {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 1%;
+}
+
+.hotelDescription {
+    margin: 1% 4% 2% 4%;
+}
