@@ -1,18 +1,5 @@
-footer {
-    background-color: #bc8f8f;
-    position: sticky;
-    bottom: 0;
-}
-
-header {
-    background-color: #bc8f8f;
-    position: sticky;
-    top: 0;
-}
-
 html,
-body,
-main {
+body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -28,40 +15,48 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+header {
+    background-color: #bc8f8f;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 #logo {
-    margin: auto;
-    padding: 5px;
+    margin-left: 1%;
 }
 
 #login {
-    float: right;
-    padding: 31px;
-    text-decoration: none;
     color: black;
-    margin: auto;
+    margin-right: 2%;
 }
 
-#contactUs {
-    text-decoration: none;
-    color: black;
-    margin: auto;
+footer {
+    background-color: #bc8f8f;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px;
 }
 
-.socialImage {
-    display:inline-flex;
-    float:right;
+#contactUs {
+    color: black;
+    margin-left: 2%;
 }
 
+.socialImage {
+    margin-right: 2%;
+}
 
 #copyright {
     font-size: 10px;
-    text-align: center;
-    padding-bottom: 5px;
 }
-
-.footerLinks {
-    padding-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+h5{
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-weight:bolder;
 }

@@ -1,5 +1,7 @@
 #list {
   margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #map {
@@ -9,10 +11,10 @@
 
 
 #listlink {
- 
+
   display: inline;
   font-weight: bolder;
-  padding:25px;
+  padding: 25px;
 }
 
 li {
@@ -22,33 +24,27 @@ li {
 ul {
 
   display: flex;
- margin-left: 42%;
+  margin-left: 42%;
   text-decoration: none;
 
 }
 
 #maplink {
-  
+
   display: inline;
   font-weight: bolder;
 
 }
 
-.listCityImage {
-  margin: 20px;
-  width: 40%;
-  background-color: rgb(132, 136, 139);
+.hotelText {
+  margin: 2%;
+}
 
-}
-.radission{
-float: left;
-}
-.lalit{
-  margin-right: 20px;
-float: right;
-}
-.taj{
-  margin-top: 20px;
-  clear: both;
+.listCityImage {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  background-color: lightgray;
+  margin: 2%;
 }
 
