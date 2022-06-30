@@ -28,7 +28,7 @@
 
 .overlay {
   position: absolute;
-  bottom: -14px;
+  bottom: 0px;
   height: 150px;
   width: 150px;
   border-radius: 25%;
@@ -40,7 +40,10 @@
   font-size: 20px;
 
 }
-
+.card{
+ background-color:transparent;
+ border:0px;
+}
 .overlay span {
   position: relative;
   top: 45%;
@@ -70,6 +73,5 @@
 #viewMore {
   display: flex;
   justify-content: center;
-  color: black;
-
+  padding-bottom: 30px;
 }

@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -12,51 +16,54 @@ a {
 
 body {
     background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
 }
 
-header {
-    background-color: #bc8f8f;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
+    header {
+        background-color: #bc8f8f;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-#logo {
-    margin-left: 1%;
-}
+    }
 
-#login {
-    color: black;
-    margin-right: 2%;
-}
+    #logo {
+        margin-left: 1%;
+    }
 
-footer {
-    background-color: #bc8f8f;
-    position: sticky;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
+    #login {
+        float: right;
+        color: black;
+        margin-right: 2%;
+    }
 
-#contactUs {
-    color: black;
-    margin-left: 2%;
-}
+    footer {
+        background-color: #bc8f8f;
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
 
-.socialImage {
-    margin-right: 2%;
-}
+    #contactUs {
+        color: white;
+        margin-left: 2%;
+    }
 
-#copyright {
-    font-size: 10px;
-}
-h5{
-    font-family:Comic Sans MS, Comic Sans, cursive;
-    font-weight:bolder;
-}
+    .socialImage {
+        margin-right: 2%;
+    }
+
+    #copyright {
+        font-size: 10px;
+    }
+
+    h5 {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-weight: bolder;
+    }

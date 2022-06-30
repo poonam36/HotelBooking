@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link href="styles/payment.css" rel="stylesheet">
     <link href="styles/common.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +23,46 @@
         <a href="index.html">
             <img src="/assests/images/logo.png" id="logo" style="height:60px; width: 60px;" alt="logo"><br>
         </a>
-        <a id="login" href="login.html" target="_blank">Login</a>
+        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#example-modal"
+        id="login">LOGIN</button>
     </header>
+     <!--header div ends here-->
+  <!--Login modal begins here-->
+
+  <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="example-modal-label"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example-modal-label">Please Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="display:flex;justify-content:center">
+        <form>
+
+          <div class="form-group">
+            <label for="">Username:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Enter Username" name="username" id="username">
+          </div>
+          <div class="form-group">
+            <label for="">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" placeholder="Enter Password" name="password" id="password">
+          </div>
+
+
+        </form>
+      </div>
+      <div class="modal-footer" style="justify-content:center;">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- login modal ends here -->
+<!--content div starts here-->
+
 
     <div class="content">
         <div class="hotelDetails">
@@ -50,13 +92,18 @@
         </div>
 
         <div id="payNow">
-            <a href="payment.html">Pay Now</a>
+            <a href="payment.html">
+                <button type="button" class="btn btn-success disabled">Pay Now</button>
+            </a>
         </div>
     </div>
+    <!--content div ends here-->
 
-
+<!--footer div starts here-->
     <footer>
-        <a href="contact.html" target="_blank" id="contactUs">Contact Us</a>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-modal"
+      id="contactUs">Contact Us</button>
+
         <p id="copyright">&copy;2020 ROOM SEARCH PVT.LTD.</p>
         <div class="socialImage">
             <a href="https://www.facebook.com">
@@ -70,6 +117,40 @@
             </a>
         </div>
     </footer>
+     <!--footer div ends here-->
+  
+  <!--Contact us modal starts here-->
+  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="example-modal-label"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example-modal-label">Get in touch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <p> Thank you for reaching out!!!</p>
+
+          <p> Please enter your email and we will get back to you.</p>
+
+          <div class="form-group">
+            <label for="">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" placeholder="Enter your email id">
+          </div>
+
+
+      </div>
+      <div class="modal-footer"> <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact us modal ends here -->
 </body>
 
 </html>

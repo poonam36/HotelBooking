@@ -5,16 +5,15 @@
 }
 
 #map {
-  display: none;
+  display: block;
 }
 
-
-
-#listlink {
-
-  display: inline;
-  font-weight: bolder;
-  padding: 25px;
+#content {
+  display: flex;
+  flex-direction: column;
+}
+.navigations{
+ margin-top:2%;
 }
 
 li {
@@ -26,14 +25,6 @@ ul {
   display: flex;
   margin-left: 42%;
   text-decoration: none;
-
-}
-
-#maplink {
-
-  display: inline;
-  font-weight: bolder;
-
 }
 
 .hotelText {
