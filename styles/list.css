@@ -1,41 +1,92 @@
+#content {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigations {
+	margin-top: 6%;
+}
+
 #list {
-  margin: 2%;
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #map {
-  display: block;
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
-}
-.navigations{
- margin-top:2%;
+	display: block;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 ul {
-
-  display: flex;
-  margin-left: 42%;
-  text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
 }
 
 .hotelText {
-  margin: 2%;
+	margin: 2%;
+}
+
+#hotelImage {
+	width: 150px;
+	height: 150px;
 }
 
 .listCityImage {
-  display: flex;
-  justify-content: flex-start;
-  width: 40%;
-  background-color: lightgray;
-  margin: 2%;
+	display: flex;
+	justify-content: flex-start;
+	width: 40%;
+	background-color: lightgray;
+	margin: 2%;
 }
 
+.listCityImage:hover {
+	background-color: rosybrown;
+}
+
+@media screen and (max-width: 576px) {
+
+	#pills-tab {
+		padding-top: 15%;
+	}
+
+	.listCityImage {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	#hotelImage {
+		width: 100%;
+	}
+
+	#map>img {
+		width: 100%;
+	}
+
+	#list {
+		margin-bottom: 20%;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	#pills-tab {
+		padding-top: 5%;
+	}
+
+	.listCityImage {
+		width: 100%;
+	}
+
+	#map>img {
+		width: 100%;
+	}
+
+	#list {
+		margin-bottom: 20%;
+	}
+}

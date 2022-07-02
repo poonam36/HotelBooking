@@ -1,43 +1,86 @@
-.customerInformation {
-    margin: 2%;
-    display: flex;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: rosybrown;
-    justify-content: space-evenly
-}
-
-.tariffDetails {
-    margin: 2%;
-    padding: 1% 2%;
-}
-
 .content {
-    margin-top: 6%;
-    margin-bottom: 2%;
-    display: flex;
+	margin-top: 6%;
+	display: flex;
+	flex-direction: column;
 }
 
 .hotelDetails {
-    background-color: rgb(132, 136, 139);
-    width: 50%;
-    height: 20%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
+	background-color: rgb(132, 136, 139);
+	width: 50%;
+	margin: auto;
+	display: flex;
 }
 
 .hotelText {
-    margin: auto;
+	margin: auto;
+}
+
+.customerInformation {
+	margin: 2%;
+	display: flex;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: rosybrown;
+	justify-content: space-evenly
+}
+
+.tariffDetails {
+	margin: 2%;
+	padding: 1% 2%;
 }
 
 #payNow {
-    margin-top: 60px;
+	margin-top: 60px;
 }
 
 .font {
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-weight: bolder;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-weight: bolder;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	.content {
+		margin-top: 15%;
+	}
+
+	.hotelDetails {
+		width: 80%;
+		margin-bottom: 2%;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	.content {
+		margin-top: 20%;
+	}
+
+	.hotelDetails {
+		width: 100%;
+		margin-bottom: 2%;
+		flex-direction: column;
+	}
+
+	.customerInformation {
+		flex-direction: column;
+	}
+
+	#hotelImage {
+		margin-left: 15%;
+		margin-top: 5%;
+	}
+
+	#payNow {
+		margin-top: 2%;
+		align-self: center;
+		margin-bottom: 5%;
+	}
+
+	.tariffDetails {
+		margin: 0%;
+		padding: 0%;
+	}
+
 }

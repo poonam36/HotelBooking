@@ -1,45 +1,110 @@
-.imageContainer {
-    width: 70%;
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
-.radissonImage {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 20%;
+.sliderBooking {
+	display: flex;
+	justify-content: start;
+	align-content: center;
+	border: 1px solid black;
+	margin: 1%;
+}
+
+.carousel {
+	width: 65%;
+}
+
+.slider-image {
+	height: 350px;
+	width: 500px;
+}
+
+.carousel-inner {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 18%;
 }
 
 .bookingFormDetails {
-    width: 30%;
-    border-left: 1px solid black;
-}
-
-.hotelDescription {
-    margin: 1% 4% 2% 4%;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-left: 1px solid black;
 }
 
 .formDetails {
-    padding: 5%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.container {
-    display: flex;
-    border: 1px solid black;
-    max-height: 400px;
-    margin: 30px;
-}
-
-form {
-    margin: 20px;
-}
-
-.bookNow {
-    padding: 5px;
-    margin-left: 125px;
+	padding: 4%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .inputBox {
-    width: 60%;
+	width: 60%;
+}
+
+.bookNow {
+	margin-left: 41%;
+}
+
+.hotelDescription {
+	margin: 1% 4% 2% 4%;
+}
+
+.arrow {
+	color: rosybrown;
+	font-size: 50px;
+}
+
+@media screen and (max-width: 576px) {
+
+	.carousel {
+		margin-left: 0%;
+		width: 100%;
+		border-right: 1px solid black;
+	}
+
+	.carousel-inner {
+		margin: 0%;
+	}
+
+	.bookingFormDetails {
+		width: 100%;
+		border: 1px solid black;
+	}
+
+	.content {
+		margin-top: 20%;
+		margin-bottom: 22%;
+		flex-direction: column;
+	}
+
+	.sliderBooking {
+		flex-direction: column;
+	}
+
+	.slider-image {
+		width: 100%;
+	}
+
+	.bookNow {
+		margin-bottom: 2%;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+	.content {
+		margin-top: 10%;
+	}
+
+	.slider-image {
+		width: 98%;
+	}
+
+	.carousel-inner {
+		margin: 1%;
+	}
 }
