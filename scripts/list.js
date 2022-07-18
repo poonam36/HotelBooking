@@ -1,7 +1,7 @@
 let urlParams = new URLSearchParams(window.location.search);
 const API_URL = "https://travel-advisor.p.rapidapi.com/";
 const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
-const travelAdvisorKey = "2c2ec3c1c2msh674419a4952260ep1d82eejsne3e3e3a7c1fc";
+const travelAdvisorKey = "";
 
 searchLocation();
 
