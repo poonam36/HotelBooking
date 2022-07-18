@@ -1,3 +1,4 @@
+
 function viewMore() {
    let viewButton = document.getElementById('viewBtn');
    if (viewButton.innerHTML == "View more") {

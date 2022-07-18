@@ -14,6 +14,10 @@
 .hotelText {
 	margin: auto;
 }
+#hotelImage{
+	max-height:300px;
+	max-width: 270px;
+}
 
 .customerInformation {
 	margin: 2%;

@@ -54,19 +54,8 @@
    <div class="content">
       <div class="sliderBooking">
          <div id="carouselExampleControls" class="carousel" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                     class="slider-image" alt="First slide">
-               </div>
-               <div class="carousel-item">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg"
-                     class="slider-image" alt="Second slide">
-               </div>
-               <div class="carousel-item">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
-                     class="slider-image" alt="Third slide">
-               </div>
+            <div id="carousel-inner" class="carousel-inner">
+               <!--carousel image comes from api here-->
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                <span class="arrow"></span>
@@ -109,26 +98,13 @@
          </div>
       </div>
       <div class="hotelDescription">
-         <h3>Radisson Blu Hotel</h3>
-         <h5>RATING</h5>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
-         <span class="fa fa-star checked"></span>
+         <h3 id="hotelName"></h3>
+         <h5>RATING : </h5>
+         <span id="stars"></span>
          <h5>AMENITIES</h5>
-         <ul>
-            <li>Room Service</li>
-            <li>Restaurant</li>
-            <li>Business Center</li>
-            <li>Fitness Centre</li>
-            <li>Pool</li>
-         </ul>
+         <div id="amenities"></div>
          <h5>DESCRIPTION</h5>
-         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellendus molestiae quas sunt
-            minus et consequatur veniam. Perferendis quia ipsum dicta distinctio dolorum sequi necessitatibus
-            inventore fuga laudantium molestias a, architecto corrupti accusamus. Quisquam est tempore nostrum
-            explicabo nobis nisi.
+         <div id="description">
          </div>
       </div>
    </div>
