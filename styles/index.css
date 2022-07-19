@@ -139,3 +139,26 @@
 		padding: 4% 0%;
 	}
 }
+
+/*the container must be positioned relative:*/
+.search-items {
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    width: 100%;
+}
+.search-items div{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+    border-radius: 12px;
+}
+/*when hovering an item:*/
+.search-items div:hover {
+    background-color: #e9e9e9; 
+}
+/*when navigating through the items using the arrow keys:*/
+.search-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}

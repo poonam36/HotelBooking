@@ -60,6 +60,7 @@ function getHotelImages() {
             }
 
         }
+        disableLoader();
     }
 }
 

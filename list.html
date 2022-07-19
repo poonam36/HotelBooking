@@ -11,10 +11,12 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="styles/loader.css">
    <link href="styles/list.css" rel="stylesheet">
    <link href="styles/common.css" rel="stylesheet">
 
 <body>
+   <div id="loader"></div>
    <!--header div begin here-->
    <header>
    </header>
@@ -52,24 +54,25 @@
    <!--content div starts here-->
    <div id="content">
       <div class="navigations">
-         <ul class="nav nav-pills" id="pills-tab">
-            <li class="nav-item">
-               <a class="nav-link active" href="#list" target="top">
-                  List View</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#map" target="top">Map View</a>
-            </li>
-         </ul>
-         
+      <ul class="nav nav-pills" id="pills-tab">
+         <li class="nav-item">
+             <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link" data-toggle="pill" href="#map-view">Map View</a>
+         </li>
+     </ul>
       </div>
-      <div id="list">
-         <!-- here hotel image card will be added through api-->
-      </div>
-      <div id="map">
-         <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-         <p>MAP VIEW</p>
-      </div>
+     <div class="tab-content" id="pills-tab-content">
+         <div id="list-view" class="tab-pane fade show active">
+             <!-- here hotel image card will be added through api-->
+             <div id="list"></div>
+         </div>
+         <div id="map-view" class="tab-pane fade">
+             <div id="map"></div>
+         </div>
+     </div>
+
    </div>
    <!--content div ends here-->
    <!--footer starts here-->
@@ -106,6 +109,7 @@
    <!-- contact us modal ends here -->
    <script src="scripts/common.js"></script>
    <script src="scripts/list.js"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=<api key>"></script>
 </body>
 
 </html>

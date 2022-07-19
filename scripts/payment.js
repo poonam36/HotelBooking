@@ -31,5 +31,6 @@ function getHotelDetails(){
    document.getElementById("hotelName").innerHTML = hotelName;
    document.getElementById("hotelAddress").innerHTML = hotelAddress;
    document.getElementById("hotelImage").setAttribute("src",image);
+   disableLoader();
 
 }

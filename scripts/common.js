@@ -47,7 +47,16 @@ function login() {
 
    }
 }
+let disableLoader = () => {
+   document.getElementById("loader").style.visibility = "hidden";
+   document.getElementsByTagName("body")[0].style.visibility = "visible";
+}
 
+let displayLoader = () => {
+   document.getElementsByTagName("body")[0].style.visibility = "hidden";
+   document.getElementById("loader").style.visibility  = "visible";
+}
+displayLoader();
 function modalLogin() {
    var username = localStorage.getItem('username');
    var password = localStorage.getItem('password');
